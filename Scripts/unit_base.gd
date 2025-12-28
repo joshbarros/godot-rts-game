@@ -21,11 +21,19 @@ var attack_target : Unit
 
 @onready var agent : NavigationAgent2D = $NavigationAgent2D
 
+func _ready():
+    set_move_to_target(Vector2.ZERO)
+
 func _process(delta):
-    pass
+    if not agent.is_target_reached():
+        _move(delta)
 
 func _move(delta):
-    pass
+    var move_pos = agent.get_next_path_position()
+    var move_dir = global_position.direction_to(move_pos)
+    var movement = move_dir * move_speed * delta
+
+    translate(movement)
 
 func _target_check():
     pass
@@ -34,7 +42,8 @@ func _try_attack_target():
     pass
 
 func set_move_to_target(target: Vector2):
-    pass
+    agent.target_position = target
+    attack_target = null
 
 func set_attack_target(target: Unit):
     pass
