@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(git init:*)",
+      "Bash(cat:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: RTS game prototype\n\n- Unit system with health, movement, and combat mechanics\n- Team-based gameplay \\(Player vs AI\\)\n- TileMap-based world with pathfinding\n- Basic sprites for characters, weapons, and tiles\n- Audio system for damage sounds\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}
