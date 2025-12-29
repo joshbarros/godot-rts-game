@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=4 uid="uid://w5uxt4t7tvyh"]
+[gd_scene load_steps=6 format=4 uid="uid://w5uxt4t7tvyh"]
 
 [ext_resource type="TileSet" uid="uid://cyrtlmnrda41a" path="res://Sprites/Tiles/tileset.tres" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://ew6r8l8jaem6" path="res://Scenes/unit_base.tscn" id="2_bo1nx"]
-[ext_resource type="Script" uid="uid://2i3vau0kbu6r" path="res://Scripts/unit_controller.gd" id="3_8gbba"]
+[ext_resource type="PackedScene" uid="uid://jq51dfdruwkd" path="res://Scenes/unit_player.tscn" id="3_player"]
+[ext_resource type="Script" path="res://Scripts/unit_controller.gd" id="4_controller"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_jjgbg"]
 vertices = PackedVector2Array(-95, -47, -95, -80, 274, -131, 274, 146.97656, -273.0703, -131, -128, -80, -274.9297, 146.00781, -128, -47)
@@ -25,8 +26,16 @@ navigation_polygon = SubResource("NavigationPolygon_jjgbg")
 affect_navigation_mesh = true
 carve_navigation_mesh = true
 
-[node name="Unit_Base" parent="." instance=ExtResource("2_bo1nx")]
+[node name="Unit_Player" parent="." instance=ExtResource("3_player")]
 position = Vector2(-150, -85)
 
 [node name="UnitController" type="Node2D" parent="."]
-script = ExtResource("3_8gbba")
+script = ExtResource("4_controller")
+
+[node name="Unit_Base2" parent="." instance=ExtResource("2_bo1nx")]
+position = Vector2(-33, -8)
+team = 1
+
+[node name="Unit_Base3" parent="." instance=ExtResource("2_bo1nx")]
+position = Vector2(41, -46)
+team = 1
