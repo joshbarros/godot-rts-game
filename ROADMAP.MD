@@ -2,60 +2,78 @@
 
 ## 📋 Project Status
 
-### 🎮 Current Status - December 28, 2025
-**Foundation built with core RTS mechanics**
+### 🎮 Current Status - December 29, 2025
+**Playable prototype with complete core gameplay loop**
 
-This project represents an RTS game prototype with unit system, health, movement, and combat mechanics. The core systems are functional and the game is playable, but it's currently a learning prototype, not a commercial product.
+This project is an RTS game prototype built in Godot 4.5 with functional unit systems, combat, AI behavior, and full game flow (menu → gameplay → win/lose conditions). The foundation is solid and ready for expansion into a full RTS experience.
 
 ### ⏸️ Development Status (December 2025)
-**Active development with regular commits**
+**Active development - Core loop complete!**
 
-The RTS project is currently in active development with recent commits showing implementation of combat systems, unit improvements, and team-based gameplay. The foundation is solid—now it needs depth, polish, and commercial-quality content.
+Recent development has focused on completing the core gameplay loop with menu system, camera controls, AI behavior, win conditions, and visual polish. The prototype is now playable from start to finish.
 
-**What's already done:** Unit system, health/combat mechanics, team-based gameplay, TileMap world with pathfinding  
-**What's needed:** Resource management, building construction, campaign mode, advanced AI, professional polish  
-**Estimated additional dev time:** 8-12 months of focused work
+**What's done:** Complete game flow, unit combat, AI behavior, camera controls, win/lose conditions, visual feedback
+**What's next:** Resource management, building construction, unit production, multi-unit selection
+**Estimated time to MVP:** 8-10 weeks | **Time to commercial release:** 6-12 months
 
 ---
 
-## Current Status (Updated: December 28, 2025)
+## Current Status (Updated: December 29, 2025)
 
 ### ✅ Core Systems Implemented!
-**Recent commits on December 26-28th, 2025**
+
+#### Game Flow:
+✅ Main menu with Play/Quit buttons
+✅ Scene transitions (menu → game)
+✅ Win/lose condition detection
+✅ End screen with team winner display
+✅ Camera controller (WASD pan + mouse wheel zoom)
 
 #### Unit System & Combat:
-✅ Unit base with health, movement, and combat mechanics  
-✅ Team-based gameplay (Player vs AI)  
-✅ Navigation system with pathfinding  
-✅ Combat mechanics with attack targeting  
-✅ Health system with take_damage and die functions  
-✅ Attack rate limiting and damage feedback  
+✅ Unit base with health, movement, and combat mechanics
+✅ Team-based gameplay (Player vs AI)
+✅ Navigation system with pathfinding
+✅ Combat mechanics with attack targeting
+✅ Health system with take_damage and die functions
+✅ Attack rate limiting and damage feedback
+
+#### AI System:
+✅ Enemy detection (configurable range)
+✅ Auto-targeting closest player unit
+✅ Periodic detection updates (performance optimized)
+
+#### Visual Feedback:
+✅ Health bars (hidden at full health, visible when damaged)
+✅ Selection visual (green indicator for selected units)
+✅ Sprite wobble animation when moving
+✅ Sprite flip based on movement direction
+✅ Damage flash (red tint on hit)
+
+#### Audio System:
+✅ Damage sound effects
+✅ Audio2D positioning
 
 #### World & Environment:
-✅ TileMap-based world with pathfinding  
-✅ Basic sprites for characters, weapons, and tiles  
-✅ Audio system for damage sounds  
-✅ Unit controller for player interaction  
+✅ TileMap-based world with pathfinding
+✅ NavigationRegion2D with proper navigation mesh
+✅ Basic sprites for characters, weapons, and tiles
 
 #### Technical Implementation:
-✅ NavigationAgent2D for pathfinding  
-✅ Signal-based event system (OnTakeDamage, OnDie)  
-✅ Proper team-based targeting (no friendly fire)  
-✅ Queue-free for unit destruction  
-✅ Project window size set to 1920x1080  
+✅ NavigationAgent2D for pathfinding
+✅ Signal-based event system (OnTakeDamage, OnDie)
+✅ Group-based unit queries (Unit, UnitPlayer groups)
+✅ Proper team-based targeting (no friendly fire)
+✅ Clean scene inheritance (unit_base → unit_player/unit_ai)
+✅ Project window size set to 1920x1080
 
-#### Player & AI Units:
-✅ Player unit with controller  
-✅ AI units with team-based behavior  
-✅ Position-based spawning in main scene  
-✅ Unit targeting and attack mechanics  
-
-### 🎯 Known Issues Fixed:
-✅ Navigation improvements (agent.target_position updates)  
-✅ Combat targeting system (attack_range checks)  
-✅ Team-based targeting (no friendly fire)  
-✅ Unit death handling (OnDie signal)  
-✅ Health system (take_damage functionality)  
+### 🎯 All Known Issues Fixed:
+✅ Navigation improvements (agent.target_position updates)
+✅ Combat targeting system (attack_range checks)
+✅ Team-based targeting (no friendly fire)
+✅ Unit death handling (OnDie signal)
+✅ Health system (take_damage functionality)
+✅ Sprite wobble only when moving (not when stopped)
+✅ Menu play button scene path corrected  
 
 ## RTS-Specific Features to Implement
 
@@ -1191,8 +1209,9 @@ func _die():
 
 ---
 
-**Last Updated:** December 28, 2025
-**Version:** 0.1-alpha
+**Last Updated:** December 29, 2025
+**Version:** 0.2-alpha (Core Loop Complete)
+**Feature Completeness:** 25%
 **Commercial Viability:** HIGH ⭐⭐⭐⭐☆
 **Career Path:** RTS Prototype → Strategy Elements → Multiplayer → Advanced RTS → Dream Games
 

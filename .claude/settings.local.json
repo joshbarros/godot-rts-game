@@ -9,7 +9,10 @@
       "Bash(git remote add:*)",
       "Bash(git branch:*)",
       "Bash(git push:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(wc:*)",
+      "Bash(git -C /c/Users/josuebarros1995/Documents/rts log --oneline)",
+      "Bash(git -C /c/Users/josuebarros1995/Documents/rts log --format=\"%H %s\")"
     ]
   }
 }
