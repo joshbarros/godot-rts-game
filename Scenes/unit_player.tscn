@@ -11,6 +11,8 @@ colors = PackedColorArray(0.49803922, 1, 0.49803922, 1)
 gradient = SubResource("Gradient_mlbbb")
 
 [node name="Unit_Player" groups=["UnitPlayer"] instance=ExtResource("1_mlbbb")]
+current_hp = 200
+max_hp = 200
 
 [node name="PlayerUnit" type="Node" parent="." index="0"]
 script = ExtResource("2_66hmh")

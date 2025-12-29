@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://ew6r8l8jaem6"]
+[gd_scene load_steps=10 format=3 uid="uid://ew6r8l8jaem6"]
 
 [ext_resource type="Script" uid="uid://4ycol8ftmx48" path="res://Scripts/unit_base.gd" id="1_2vsbj"]
 [ext_resource type="Texture2D" uid="uid://bpgebaup8d8g8" path="res://Sprites/Characters/tile_0087.png" id="1_yagyl"]
 [ext_resource type="Script" uid="uid://dhh5vfv5kgtu6" path="res://Scripts/sprite.gd" id="3_3wtx8"]
 [ext_resource type="Script" uid="uid://jtj2nqtv2rsn" path="res://Scripts/health_bar.gd" id="3_aj46g"]
+[ext_resource type="Script" uid="uid://c0gffcs4m7p1r" path="res://Scripts/unit_audio.gd" id="5_00vf3"]
+[ext_resource type="AudioStream" uid="uid://by4ilbrtixhx3" path="res://Audio/take_damage.wav" id="6_xfv1a"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yagyl"]
 radius = 8.0
@@ -47,3 +49,7 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_2vsbj")
 value = 50.0
 show_percentage = false
 script = ExtResource("3_aj46g")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+script = ExtResource("5_00vf3")
+take_damage_sfx = ExtResource("6_xfv1a")
