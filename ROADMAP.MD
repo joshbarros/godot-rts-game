@@ -7,14 +7,26 @@
 
 This project is an RTS game prototype built in Godot 4.5 with functional unit systems, combat, AI behavior, and full game flow (menu → gameplay → win/lose conditions). The foundation is solid and ready for expansion into a full RTS experience.
 
-### ⏸️ Development Status (December 2025)
-**Active development - Core loop complete!**
+### ⏸️ Development Status
+**PAUSED - December 29, 2025 @ 13:28 (Monday)**
 
-Recent development has focused on completing the core gameplay loop with menu system, camera controls, AI behavior, win conditions, and visual polish. The prototype is now playable from start to finish.
+Development paused after completing the core gameplay loop. Returning in 2027 to finish and launch on Steam!
 
-**What's done:** Complete game flow, unit combat, AI behavior, camera controls, win/lose conditions, visual feedback
-**What's next:** Resource management, building construction, unit production, multi-unit selection
-**Estimated time to MVP:** 8-10 weeks | **Time to commercial release:** 6-12 months
+**What's done:** Complete game flow, unit combat, AI behavior, camera controls, win/lose conditions, visual feedback, full documentation
+**What's next (2027):** Resource management, building construction, unit production, multi-unit selection
+**Target:** Steam release in 2027! 🚀
+
+---
+
+## 📅 Development Timeline
+
+| Date | Milestone |
+|------|-----------|
+| Dec 26, 2025 | Project started - initial prototype |
+| Dec 28, 2025 | Combat system, unit improvements |
+| Dec 29, 2025 | Core loop complete, AI, menu, win conditions |
+| **Dec 29, 2025 @ 13:28** | **PAUSED** - All scripts documented |
+| **2027** | **RESUME** - Resource system, buildings, Steam launch |
 
 ---
 
@@ -1209,10 +1221,12 @@ func _die():
 
 ---
 
-**Last Updated:** December 29, 2025
+**Last Updated:** December 29, 2025 @ 13:28 (Monday)
 **Version:** 0.2-alpha (Core Loop Complete)
+**Status:** PAUSED until 2027
 **Feature Completeness:** 25%
 **Commercial Viability:** HIGH ⭐⭐⭐⭐☆
+**Target:** Steam Release 2027 🎮
 **Career Path:** RTS Prototype → Strategy Elements → Multiplayer → Advanced RTS → Dream Games
 
 ## Research: Top Indie RTS Games for Inspiration
